@@ -1,0 +1,15 @@
+﻿问题2：设计一个复数类Complex，能进行复数的减法和输出，在main函数中的应用如下
+ int main(){
+   Complex  c1,c2,c3 ;
+	int r,i ;
+   cout<<”\n input first,r and i:”
+cin>>r>>i ;
+   c1.init(r,i);
+cout<<”\n input second,r and i:”
+ cin>>r>>I;
+   c2.init(r,i);
+ c3 = c2-c1;
+  cout<<c3;
+  return 0;
+}
+提示：重载<<运算符不能使用成员函数形式
