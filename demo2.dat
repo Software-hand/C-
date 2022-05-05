@@ -1,0 +1,41 @@
+﻿2.3.2 实验内容 运算符重载
+问题1：以下有类Point，请添加适当成员函数以便Point对象可以进行运算
+class Point{
+	int x,y;
+public:
+	void init( int a, int b){
+		x =a; y = b;
+}
+	void disp(){
+		cout<<x<<”   “<<y<<endl;
+	}
+} ;
+int main(){
+	Point a,b,c ;
+	a.init(1,2) ;   b.init(3,4)
+	c = a + b ;
+	c.disp() ;
+}
+采用2种方式重载＋运算符：成员函数和全局函数方式
+提示：
+	成员函数方式 Point operator+(const Point& a)
+	全局函数方式 Point operator+(const Point& a,const Point& b)
+	全局函数方式下要注意成员访问限制，可以使用友元或其他方式
+思考：
+	这两种方式你更喜欢用哪一种？有什么优缺点？
+
+问题2：设计一个复数类Complex，能进行复数的减法和输出，在main函数中的应用如下
+ int main(){
+   Complex  c1,c2,c3 ;
+	int r,i ;
+   cout<<”\n input first,r and i:”
+cin>>r>>i ;
+   c1.init(r,i);
+cout<<”\n input second,r and i:”
+ cin>>r>>I;
+   c2.init(r,i);
+ c3 = c2-c1;
+  cout<<c3;
+  return 0;
+}
+提示：重载<<运算符不能使用成员函数形式
