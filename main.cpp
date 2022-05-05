@@ -1,5 +1,5 @@
 // 根据注释语句的提示，实现类Date的成员函数。
-
+ 
 #include <iostream> 
 using namespace std;
 class Point {
