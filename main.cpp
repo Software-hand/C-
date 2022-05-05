@@ -42,7 +42,7 @@ public:
 		cout << y << " year " << m << " month " << d << " day" << endl;
 	}
 	int subDate(Date d1)   // ÇóÌìÊı
-	{
+	{ 
 		y -= d1.y;
 		m -= d1.m;
 		d -= d1.d;
