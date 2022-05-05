@@ -27,7 +27,7 @@ Complex operator<<(ostream& cout, Complex& a)
 { 
 	cout << "(" << a.real << "," << a.image << ")" << endl; 
 	return a;
-}
+} 
 
 int main() {
 	Complex c1, c2, c3;
